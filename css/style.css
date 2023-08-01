@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #f7f7f7;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 14px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-clip: content-box;
+  border: 4px solid transparent;
+  box-shadow: inset 0 0 0 10px #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 0 10px #777;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f7f7f7;
+}
+
+/* Utilities */
+
+.text-bold {
+  font-family: "Manrope", sans-serif;
+  font-size: bold;
+  font-weight: 700;
+}
+
+.h-text {
+  color: #333;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+}
+
+.gradient-1 {
+  background-image: linear-gradient(45deg, #ff0f7b, #f89b29);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-2 {
+  background-image: linear-gradient(45deg, #b429f9, #26c5f3);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-3 {
+  background-image: linear-gradient(45deg, #00b09b, #96c93d);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-4 {
+  background: linear-gradient(45deg, #028cf3, #26d8b6);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-5 {
+  background-image: linear-gradient(45deg, #392d69, #b57bee);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
+/* Header */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  padding: 0px 120px;
+}
+
+.nav-links {
+  display: flex;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  margin: 0 45px;
+}
+
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+.nav-links li a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  padding: 0px 72px;
+  justify-content: space-evenly;
+}
+
+.hero-img {
+  height: 100vh;
+  transform: scale(0.8);
+  max-width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 630px;
+  line-height: 1.7;
+}
+
+.hero-content h1 {
+  color: #333;
+  font-family: "Manrope", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.hero-content p {
+  color: #333;
+  font-family: "Manrope", sans-serif;
+  font-size: 2.5rem;
+  margin-top: 16px;
+}
+
+/* Work Section */
+
+.work {
+  padding: 120px;
+}
+
+h2 {
+  color: #333;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 590px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  margin-block: 40px;
+}
+
+/* .card:nth-child(1) a {
+  color: #999;
+  cursor: not-allowed;
+} */
+
+.card:hover {
+  box-shadow: none;
+  transition: 0.45s;
+}
+
+.card-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 36px;
+}
+
+.project-title {
+  color: #333;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.project-description {
+  color: #333;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-top: 24px;
+  letter-spacing: 0.006rem;
+  line-height: 166.5%;
+}
+
+.project-time {
+  color: #333;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin: 24px 0 32px 0;
+}
+
+.btn {
+  font-size: 1.25rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+
+.btn img {
+  padding-left: 12px;
+}
+
+a.btn {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+
+a.btn:hover {
+  color: #333;
+}
+
+a.btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+a.btn:hover::before {
+  transform: scaleX(1);
+}
+
+/* Connect Section */
+
+.connect {
+  padding: 120px;
+  text-align: center;
+}
+
+h3 {
+  color: #333;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1.875rem;
+}
+
+.connect-content {
+  color: #333;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+a.connect-mail {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1.625rem;
+  text-decoration: none;
+}
+
+a.connect-mail {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+
+a.connect-mail:hover {
+  color: #333;
+}
+
+a.connect-mail::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(45deg, #392d69, #b57bee);
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+a.connect-mail:hover::before {
+  transform: scaleX(1);
+}
+
+/* Social Section */
+
+.socials {
+  padding: 20px;
+  text-align: center;
+  margin-top: 48px;
+}
+
+h4 {
+  color: #333;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1.875rem;
+  margin-bottom: 48px;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons a i {
+  color: #333;
+  margin-left: 32px;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.medium:hover {
+  color: #00ab6c;
+}
+
+.instagram:hover {
+  background-image: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.github:hover {
+  color: #777;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+/* .social-icons a i:nth-child(1):hover {
+  color: #0077b5;
+}
+
+.social-icons a i:nth-child(2):hover {
+  color: #00ab6c;
+}
+
+.social-icons a i:nth-child(3):hover {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+} */
+
+/* .social-icons a i:hover {
+  color: #777;
+} */
+
+/* About Section */
+
+.about {
+  display: flex;
+  padding: 120px 72px 120px 72px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-img img {
+  max-width: 432px;
+  width: 100%;
+  height: auto;
+}
+
+.about-content {
+  max-width: 793px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.01875rem;
+}
+
+.content-h {
+  margin-bottom: 24px;
+}
+
+.content-1,
+.content-2,
+.content-3 {
+  margin-bottom: 36px;
+}
+
+.content-r {
+  color: #333;
+  font-weight: 600;
+}
+
+a.content-r {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+
+a.content-r:hover {
+  color: #333;
+}
+
+a.content-r::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+a.content-r:hover::before {
+  transform: scaleX(1);
+}
+
+.content-r img {
+  color: #333;
+  margin-left: 10px;
+}
+
+/* Footer Section */
+
+footer {
+  margin-top: 72px;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  padding: 60px 120px;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
