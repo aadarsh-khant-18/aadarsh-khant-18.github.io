@@ -1,128 +1,97 @@
-/* Media Queries Tablet Devices */
-@media(min-width: 501px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1486px) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+
+  .flex-container {
+    flex-wrap: nowrap;
+  }
+
   .navbar {
-    padding: 20px;
+    max-width: 91vw;
+    margin: auto;
+    overflow: hidden;
+    top: 1.5rem;
+    padding: 1rem;
   }
 
-  .logo {
-    padding-left: 20px;
-    transform: scale(0.81);
+  .navbar-logo img {
+    max-width: 2.75rem;
   }
 
-  .nav-links li a {
-    margin: 0 20px;
+  .navbar-links {
+    gap: 1.75rem;
   }
 
-  .hero {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-  }
-  
-  .hero-img {
-    max-width: 100%;
-    height: auto;
-  }
-  
   .hero-content {
+    max-width: 91vw;
+    gap: 2rem;
+  }
+
+  .hero-heading {
+    font-size: 2.25rem;
+    margin-block: 2rem;
+  }
+
+  .btns {
     display: flex;
-    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .btn--filled {
+    margin-right: 0;
+  }
+
+  .card {
+    max-width: 91vw;
+    display: flex;
     justify-content: center;
-    text-align: center;
   }
 
-  .hero-content h1 {
-    padding-top: 60px;
-    font-size: 2.25rem;
-  }
-  
-  .hero-content p {
-    font-size: 2.25rem;
-    margin-top: 8px;
-  }
-
-  .work {
-    padding: 20px;
-  }
-  
-  h2.h-text {
-    font-size: 2rem;
-    padding-top: 60px;
-  }
-  
   .card-content {
-    padding: 32px;
+    padding-left: 1rem;
   }
 
-  .connect {
-    padding: 20px;
-    text-align: center;
+  .project-title {
+    margin-top: 1rem;
+    font-size: 1.25rem;
   }
-  
-  h3 {
-    padding-top: 60px;
+
+  .project-description {
+    font-size: 0.875rem;
   }
-  
-  /* Social Section */
+
+  .project-time {
+    font-size: 0.875rem;
+  }
+
+  .bento {
+    max-width: 91vw;
+  }
+
   .socials {
-    padding: 20px;
-    text-align: center;
-    margin-top: 48px;
-  }
-  
-  h4 {
-    font-size: 2rem;
-    margin-bottom: 48px;
-  }
-  
-  .social-icons a i {
-    margin-left: 24px;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90vw;
   }
 
-  .h-text {
-    font-size: 2rem;
+  .bento-btn {
+    flex: 1;
+  }
+
+  .location-card {
+    flex: 1;
   }
 
   .footer-content {
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
+    max-width: 91vw;
+    margin: auto;
   }
 
   .footer-content p {
-    padding: 10px;
-  }
-
-  .about {
-    flex-direction: column;
-    padding: 60px 20px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .about-content {
-    text-align: center;
-  }
-  
-  .content-h {
-    margin-block: 24px;
-  }
-  
-  .content-1, .content-2, .content-3 {
-    margin-bottom: 36px;
-  }
-  
-  .content-r {
-    color: #333;
-    font-weight: 600;
-  }
-  
-  .content-r p {
-    display: inline;
-  }
-  
-  .content-r img {
-    color: #333;
-    margin-left: 10px;
+    font-size: 0.875rem;
+    font-weight: 400;
   }
 }

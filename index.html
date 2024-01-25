@@ -1,157 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aadarsh Khant • Freelance Designer & Developer</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/mobile.css"/>
+    <link rel="stylesheet" href="./css/tablet.css">
+  </head>
+  <body>
+    <div class="hero">
+      <!-- Header -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description"
-    content="Aadarsh Khant - UI/UX Designer. An engineer by profession & a designer by choice. Passionate, hard-working & dedicated UI/UX designer with experience in UI/UX designing, frontend development. Also an aspiring mountaineer and traveller.">
-  <meta name="author" content="Aadarsh Khant">
-  <meta name="keywords"
-    content="Aadarsh Khant, UI/UX Designer">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="./images/snow-capped-mountain.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normal.css">
-  <link rel="stylesheet" href="css/tablet.css">
-  <link rel="stylesheet" href="css/mobile.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" integrity="sha256-TryXbHoOGuTSpAGc8mP33sWvAKI+fhvU4AZZ0LPaesk=" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" integrity="sha256-odlNpseyKe/Yr2FVkKfof6CSj8+edbarxw5hDpqCGBE=" crossorigin="anonymous"></script>
-  <script>
-    (function () {
-        var scroll = new LocomotiveScroll();
-    })();
-  </script>
-  <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2917974,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-
-  <title>Aadarsh Khant - UI/UX Designer</title>
-</head>
-
-<body data-scroll-container>
-
-  <!-- Navbar Section -->
-
-  <header data-scroll-section class="navbar">
-    <div class="logo">
-      <a href="index.html"><img src="./images/logo.svg"
-          alt="aadarsh-khant-logo aadarsh-khant aadarsh.uiux uiuxdesigner"></a>
+      <header class="navbar">
+        <div class="navbar-logo">
+          <a href="index.html"> <img src="./images/logo_icon.png" alt="" /></a>
+        </div>
+        <nav>
+          <ul class="navbar-links">
+            <li><a href="#work-section">Work</a></li>
+            <li><a href="#info">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="hero-content">
+        <p class="hero-heading">Hello, I'm Aadarsh</p>
+        <p class="hero-para">
+          A human who can help you design, code websites and get them to the top
+          of search engine organically.
+        </p>
+        <div class="btns">
+          <button class="btn btn--filled">Get In Touch</button>
+          <button class="btn btn--outlined">View Work</button>
+        </div>
+      </div>
     </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#h-text">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="./resume/AadarshKhant-Resume.pdf">Résumé</a></li>
+
+    <!-- Work Section -->
+    <main id="work-section">
+      <h2 class="h-text">Selected Work</h2>
+      <div class="card-container">
+        <div class="card">
+            <img class="card-banner" src="./images/SMPBanner.png" alt="Sanjay Makwana Website" />
+          <div class="card-content">
+            <p class="project-title">Sanjay Makwana Photography</p>
+            <p class="project-description">
+              Sanjay Makwana is a professional wedding photographer who wanted
+              to get his website design & developed. Worked under my mentor as
+              an UI designer on this project.
+            </p>
+            <p class="project-time">◦ October — 2022</p>
+            <a
+              class="btn--link"
+              href="https://www.sanjaymakwana.com/"
+              target="_blank"
+              >Visit Website<img
+                src="./images/arrow_right.svg"
+                alt="right-arrow"
+            /></a>
+          </div>
+        </div>
+
+        <div class="card">
+            <img class="card-banner"  src="./images/sushiman.png" alt="" />
+          <div class="card-content">
+            <p class="project-title">Sushiman</p>
+            <p class="project-description">
+              Developed this website as a part of my frontend coding sprint.
+              Completely responsive, with micro-interactions & animations.
+            </p>
+            <p class="project-time">◦ November — 2023</p>
+            <a class="btn--link" href="https://aadarsh-khant-18.github.io/sushiman-website/" target="_blank"
+              >Visit Website<img
+                src="./images/arrow_right.svg"
+                alt="right-arrow"
+            /></a>
+          </div>
+        </div>
+
+        <div class="card">
+            <img class="card-banner" src="./images/LCodeBanner.png" alt="" />
+          <div class="card-content">
+            <p class="project-title">L-Code App</p>
+            <p class="project-description">
+              L-Code is a code learning platform which allows you to learn
+              programming as per your own comfort along with test driven
+              learning.
+            </p>
+            <p class="project-time">◦ April — 2021</p>
+            <a class="btn--link" href="https://medium.com/@ankhant18/l-code-the-code-learning-app-ui-ux-case-study-e77067a89983" target="_blank"
+              >Read Case Study<img
+                src="./images/arrow_right.svg"
+                alt="right-arrow"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Contact Section -->
+
+<div class="wrapper">
+  <section id="info">
+    <h3 class="h-text">About</h3>
+  <div class="flex-container bento">
+    <div class="help-card">
+      <p class="help-heading">What I can help you out with?</p>
+      <ul class="help-li">
+        <li><img src="./images/arrow_right.svg" alt="">Design</li>
+        <li><img src="./images/arrow_right.svg" alt="">Developent</li>
+        <li><img src="./images/arrow_right.svg" alt="">Search Engine Optimization</li>
       </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-
-  <section class="hero" data-scroll-section>
-    <img class="hero-img" src="./images/hero_image.png" alt="hero-img aadarsh-hero-img">
-    <div class="hero-content">
-      <h1>Hii! I’m <span class="text-bold gradient-1">Aadarsh</span>.</h1>
-      <p>A <span class="text-bold gradient-2">UI/UX Designer</span>, focused on creating <span
-          class="text-bold gradient-3">impactful & meaningful</span> digital <span
-          class="text-bold gradient-4">experiences</span>.</p>
     </div>
-  </section>
-
-  <!-- Work Section -->
-
-  <main class="work" data-scroll-section>
-    <h2 id="h-text">Selected Work</h2>
-    <div class="cards">
-
-      <div class="card">
-        <div class="card-banner">
-          <img src="./images/SMPBanner.png" alt="Sanjay Makwana Website">
-        </div>
-        <div class="card-content">
-          <p class="project-title">Sanjay Makwana Photography</p>
-          <p class="project-description">Sanjay Makwana is a professional wedding photographer who wanted to get his website design & developed. Worked under my mentor as an UI designer on this project. </p>
-          <p class="project-time">October — 2022(most recent)</p>
-          <a class="btn" href="https://www.sanjaymakwana.com/" target="_blank">Visit Website<img src="./images/arrow-right.svg" alt="right-arrow"></a>
-        </div>
-      </div>
-
-
-      <div class="card">
-        <div class="card-banner">
-          <img src="./images/MSDBanner.png" alt="Microsoft Design Challenge 2022">
-        </div>
-        <div class="card-content">
-          <p class="project-title">MS Design Challenge - Eduverse</p>
-          <p class="project-description">Eduverse is a 3D virtual world where students & teachers can exchange in an
-            immersive & engaging learning
-            experience sitting anywhere.</p>
-          <p class="project-time">February — 2022</p>
-          <a class="btn" href="https://medium.com/@ankhant18/microsoft-design-challenge-2022-eduverse-a7ca4bb19140" target="_blank">Read Case Study<img src="./images/arrow-right.svg" alt="right-arrow"></a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-banner">
-          <img src="./images/LCodeBanner.png" alt="l-code app.">
-        </div>
-        <div class="card-content">
-          <p class="project-title">L-Code App</p>
-          <p class="project-description">L-Code is a code learning platform which allows you to learn programming as per
-            your own comfort along with test driven learning.</p>
-          <p class="project-time">April — 2021</p>
-          <a class="btn" target="_blank"
-            href="https://medium.com/@ankhant18/l-code-the-code-learning-app-ui-ux-case-study-e77067a89983">Read Case
-            Study<img src="./images/arrow-right.svg" alt="right-arrow"></a>
-        </div>
-      </div>
+    <div class="cta-card">
+      <p>Have a project in mind?</p>
+      <button><a href="#">adarsshh18@gmail.com</button></a>
     </div>
-  </main>
+  </div>
 
-  <!-- Contact Section -->
+  <div class="socials">
+    <button class="bento-btn X"><a href="#">X</a></button>
+    <button class="bento-btn github"><a href="#">GitHub</a></button>
+    <button class="bento-btn instagram"><a href="#">Instagram</a></button>
+    <button class="bento-btn medium"><a href="#">Medium</a></button>
+    <button class="bento-btn linkedin"><a href="#">LinkedIn</a></button>
+  </div>
 
-  <section class="connect" data-scroll-section>
-    <h3 class="h-text">Get in touch</h3>
-    <p class="connect-content">Feel free to reach out for collaborations/queries or just say a hi!</p>
-    <a class="connect-mail gradient-5" href="mailto:adarshkhant16@gmail.com">adarshkhant16@gmail.com</a>
-  </section>
-
-  <!-- Socials Section -->
-
-  <section class="socials" data-scroll-section>
-    <h4 class="h-text">Socials</h4>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/aadarsh-khant/"><i class="linkedin fa-brands fa-linkedin-in fa-2x"></i></a>
-      <a href="https://medium.com/@aadarsh18"><i class="medium fa-brands fa-medium fa-2x"></i></a>
-      <a href="https://www.instagram.com/adarsshh_7/"><i class="instagram fa-brands fa-instagram fa-2x"></i></a>
-      <a href="https://github.com/aadarsh-khant-18"><i class="github fa-brands fa-github fa-2x"></i></a>
-      <a href="https://twitter.com/adarsshh9"><i class="twitter fa-brands fa-twitter fa-2x"></i></a>
+  <div class="flex-container bento">
+    <div class="quote-card">
+      <p>“Mountains are the means, the man is the end. The goal is not to reach the top of the mountains, but to improve the man.”
+      </p>
     </div>
+    <div class="location-card">
+      <p>Based in Mumbai, Bharat</p>
     </div>
-  </section>
-
+  </div>
+</section>
   <!-- Footer -->
-
-  <footer data-scroll-section>
+  <footer>
     <div class="footer-content">
-      <p>&copy; Aadarsh Khant — 2022</p>
+      <p>&copy; Aadarsh Khant — 2024</p>
       <p>Designed & Developed with ❤️</p>
     </div>
   </footer>
-
-  <script src="./app.js"></script>
-
-</body>
-
+</div>
+  </body>
 </html>

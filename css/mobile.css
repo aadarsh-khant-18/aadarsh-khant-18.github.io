@@ -1,144 +1,106 @@
 /* Media Queries Mobile Devices */
-@media(min-width: 347px) and (max-width: 767px) {
-  html, body {
+@media (min-width: 347px) and (max-width: 768px) {
+  html,
+  body {
     scroll-behavior: smooth;
   }
-  
+
+  .flex-container {
+    /* flex-wrap: nowrap; */
+    flex: 1;
+    flex-direction: column;
+  }
+
   .navbar {
-    padding: 16px;
+    max-width: 91vw;
+    margin: auto;
+    overflow: hidden;
+    top: 1.5rem;
+    padding: 1rem;
   }
 
-  .logo {
-    /* padding-left: 8px; */
-    transform: scale(0.8);
+  .navbar-logo img {
+    max-width: 2.75rem;
   }
 
-  .nav-links li a {
-    margin: 0 12px;
+  .navbar-links {
+    gap: 1.75rem;
   }
 
-  .hero {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 0px 16px;
-  }
-  
-  .hero-img {
-    max-width: 100%;
-    height: auto;
-    transform: scale(0.92);
-  }
-  
   .hero-content {
+    max-width: 91vw;
+    gap: 2rem;
+  }
+
+  .hero-heading {
+    font-size: 2.25rem;
+    margin-block: 2rem;
+  }
+
+  .btns {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .btn--filled {
+    margin-right: 0;
+  }
+
+  .card {
+    max-width: 91vw;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .hero-content h1 {
-    padding-top: 40px;
-    font-size: 2.125rem;
-  }
-  
-  .hero-content p {
-    margin-top: 0px;
-    font-size: 2.125rem;
   }
 
-  .work {
-    padding: 16px;
+  .card-banner {
+    flex: 1;
+    overflow: hidden;
   }
-  
-  h2 {
-    font-size: 2rem;
-    padding-top: 60px !important;
-    margin-bottom: 48px;
-  }
-  
+
   .card-content {
-    padding: 32px;
+    padding-left: 0;
+  }
+
+  .project-title {
+    margin-top: 1rem;
+    font-size: 1.25rem;
   }
 
   .project-description {
-    text-align: justify;
+    font-size: 0.875rem;
   }
 
-  .connect {
-    padding: 12px;
-    text-align: center;
+  .project-time {
+    font-size: 0.875rem;
   }
 
-  a.connect-mail {
-    font-size: 1.625rem;
-    text-align: center;
+  .bento {
+    max-width: 91vw;
   }
-  
-  h3 {
-    padding-top: 60px;
-  }
-  
-  /* Social Section */
+
   .socials {
-    padding: 16px;
-    text-align: center;
-    margin-top: 48px;
-  }
-  
-  h4 {
-    font-size: 2rem;
-    margin-bottom: 48px;
-  }
-  
-  .social-icons a i {
-    margin-left: 18px;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90vw;
   }
 
-  .h-text {
-    font-size: 2rem;
+  .bento-btn {
+    flex: 1;
+  }
+
+  .location-card {
+    flex: 1;
   }
 
   .footer-content {
-    flex-direction: column;
-    padding: 16px;
-    text-align: center;
+    max-width: 91vw;
+    margin: auto;
   }
 
   .footer-content p {
-    padding: 10px;
-  }
-
-  .about {
-    flex-direction: column;
-    padding: 60px 16px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .about-content {
-    text-align: center;
-  }
-  
-  .content-h {
-    margin-block: 24px;
-  }
-  
-  .content-1, .content-2, .content-3 {
-    text-align: justify;
-    margin-bottom: 36px;
-  }
-  
-  .content-r {
-    color: #333;
-    font-weight: 600;
-  }
-  
-  .content-r p {
-    display: inline;
-  }
-  
-  .content-r img {
-    color: #333;
-    margin-left: 10px;
+    font-size: 0.875rem;
+    font-weight: 400;
   }
 }
