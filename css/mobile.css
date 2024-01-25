@@ -1,0 +1,106 @@
+/* Media Queries Mobile Devices */
+@media (min-width: 347px) and (max-width: 768px) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+
+  .flex-container {
+    /* flex-wrap: nowrap; */
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .navbar {
+    max-width: 91vw;
+    margin: auto;
+    overflow: hidden;
+    top: 1.5rem;
+    padding: 1rem;
+  }
+
+  .navbar-logo img {
+    max-width: 2.75rem;
+  }
+
+  .navbar-links {
+    gap: 1.75rem;
+  }
+
+  .hero-content {
+    max-width: 91vw;
+    gap: 2rem;
+  }
+
+  .hero-heading {
+    font-size: 2.25rem;
+    margin-block: 2rem;
+  }
+
+  .btns {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .btn--filled {
+    margin-right: 0;
+  }
+
+  .card {
+    max-width: 91vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-banner {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .card-content {
+    padding-left: 0;
+  }
+
+  .project-title {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .project-description {
+    font-size: 0.875rem;
+  }
+
+  .project-time {
+    font-size: 0.875rem;
+  }
+
+  .bento {
+    max-width: 91vw;
+  }
+
+  .socials {
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90vw;
+  }
+
+  .bento-btn {
+    flex: 1;
+  }
+
+  .location-card {
+    flex: 1;
+  }
+
+  .footer-content {
+    max-width: 91vw;
+    margin: auto;
+  }
+
+  .footer-content p {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}
