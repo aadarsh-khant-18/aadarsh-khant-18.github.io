@@ -79,6 +79,14 @@
     max-width: 91vw;
   }
 
+  .help-heading {
+    font-size: 1.5rem;
+  }
+
+  .help-li {
+    font-size: 1.25rem;
+  }
+
   .socials {
     gap: 1rem;
     display: flex;
@@ -100,7 +108,7 @@
   }
 
   .footer-content p {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 400;
   }
 }

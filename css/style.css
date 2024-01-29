@@ -198,12 +198,12 @@ a {
 .card-banner {
   flex: 0 0 46%;
   overflow: hidden;
+  border-radius: 0.313rem;
 }
 
 .card-banner img {
   max-width: 100%;
   height: auto;
-  border-radius: 0.313rem;
 }
 
 .card-content {
